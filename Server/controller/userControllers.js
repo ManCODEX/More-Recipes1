@@ -2,6 +2,7 @@
 import database from '../models/index';
 import jsonwebtoken from 'jsonwebtoken';
 const users = database.Users;
+const key = 'doxa';
 class userss {
 //  sign up controller
     static createTheUser (req, res){
@@ -12,7 +13,7 @@ class userss {
         }
 //        bcrypt.hash(password, 5)
 //        .then(hash) => {
-//          
+//     
 //        }
         return userss
           .create({
@@ -36,11 +37,11 @@ class userss {
     })
     .then((users) => {
       if (!users) {
-        return res.status(400).send({ message: 'Sorry User not found.' });
+        return res.status(400).send({ message: 'Eeyah Sorry User was not found.' });
       } else if (users.password !== req.body.password) {
-        return res.status(400).send({ message: 'Incorrect password.' });
+        return res.status(400).send({ message: 'Oops!! Incorrect password.' });
       }
-      const token = jsonwebtokent.sign({ id: users.id }, supersecretkey, { expiresIn: 7000 });
+      const token = jsonwebtokent.sign({ id: users.id },Key, { expiresIn: 7000 });
       return res.status(201).send({ status: 'Success.', token, message: 'Login was successful.' });
     })
 //    needs catch statement

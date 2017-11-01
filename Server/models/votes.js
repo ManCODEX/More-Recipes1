@@ -14,7 +14,7 @@ const Votes = sequelize.define('Votes', {
     Votes.associate = (models) => {
         Votes.belongsTo(models.receipe, {
             foreignKey: 'id',
-            onDelete: 'DOXA',
+            onDelete: 'CASCADE',
         });
     };
   return Votes;

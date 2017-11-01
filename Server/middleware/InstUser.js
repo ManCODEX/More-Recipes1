@@ -28,4 +28,4 @@ class Check{
   }
   
 }
-export default CheckUser;
+export default Check;

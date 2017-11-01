@@ -1,4 +1,3 @@
-'use strict';
 module.exports = (sequelize, DataTypes) => {
   var comments = sequelize.define('comments', {
     clientid: DataTypes.INTEGER,

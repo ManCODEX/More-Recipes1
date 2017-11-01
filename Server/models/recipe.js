@@ -16,9 +16,9 @@ module.exports = (sequelize, DataTypes) => {
   });
         // associations is being defined here
         Receipe.associate = (models) => {
-        Receipe.belongsTo(models.user, {
+        Receipe.belongsTo(models.User, {
             foreignKey: 'id',
-            onDelete: 'DOXA',
+            onDelete: 'CASCADE',
         });
     };
   return Receipe;

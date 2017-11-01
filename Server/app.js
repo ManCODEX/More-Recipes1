@@ -1,7 +1,7 @@
 import express from 'express';
 import logger from 'morgan';
 import bodyParser from 'body-parser';
-import routes from './routes/routes';
+import routes from './route/route';
 
 console.log(routes);
 
