@@ -1,0 +1,16 @@
+.bg{
+    background: url(img/kitchen-scale-532651_640.jpg) no-repeat; width: 100%; height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-container{
+    padding:50px 60px;
+    margin-top: 20vh;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
+    -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+    box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+}

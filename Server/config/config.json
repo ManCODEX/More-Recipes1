@@ -1,0 +1,28 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "mastery275",
+    "database": "Recipokdb",
+    "host": "127.0.0.1",
+    "port" : 5432,  
+    "dialect": "postgres"
+  },
+    
+  "test": {
+    "username": "Mancodex",
+    "password": "mastery275",
+    "database": "Recipokdb-dev",
+    "host": "127.0.0.1",
+    "port": 5432,  
+    "dialect": "postgres"
+  },
+    
+  "production": {
+    "username": "Mancodex",
+    "password": "mastery275",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "port": 5432,  
+    "dialect": "postgres"
+  }
+}
