@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+ - '6.11.4'
+
+install:
+ - npm install
+
+script:
+ - npm test
+
+cache:
+ - npm install
+ 
+ after success:
+  -npm run coverage
